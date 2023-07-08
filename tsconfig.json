@@ -19,23 +19,11 @@
     "noFallthroughCasesInSwitch": false,
     "resolveJsonModule": true,
     "paths": {
-      "@configuration/*": [
-        "./src/configuration/*"
+      "@app/*": [
+        "./src/app/*"
       ],
-      "@controllers/*": [
-        "./src/controllers/*"
-      ],
-      "@core/*": [
-        "./src/core/*"
-      ],
-      "@frameworks/*": [
-        "./src/frameworks/*"
-      ],
-      "@services/*": [
-        "./src/services/*"
-      ],
-      "@use-cases/*": [
-        "./src/use-cases/*"
+      "@infra/*": [
+        "./src/infra/*"
       ],
       "@helpers/*": [
         "./src/helpers/*"

@@ -2,8 +2,8 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { AppDataSource } from '@frameworks/data-services/sqlite/data.source';
-import { API_VERSION } from '@configuration/versions';
+import { AppDataSource } from '@infra/database/sqlite/data.source';
+import { API_VERSION } from '@helpers/versions';
 
 AppDataSource.initialize();
 
