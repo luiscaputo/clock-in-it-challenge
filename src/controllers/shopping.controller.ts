@@ -1,3 +1,4 @@
+import { API_VERSION } from '@configuration/versions';
 import { CreateShoppingDto } from '@core/dtos';
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
@@ -10,7 +11,7 @@ type IQueriesParams = {
 };
 
 @ApiTags('Shopping')
-@Controller('api/shopping')
+@Controller(`api/${API_VERSION.v1}/shopping`)
 export class ShoppingController {
   constructor(private shoppingUseCases: ShoppingUseCases) {}
 
